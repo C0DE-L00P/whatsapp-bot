@@ -13,7 +13,7 @@ client.on('ready', () => {
     setInterval(()=>{
         i++;
         console.log('sent interval '+ i);
-        client.sendMessage("201020624331@c.us", 'ازيك يا اشرف '+ Date.now());
+        client.sendMessage("201020624331@c.us", 'ازيك يا اشرف '+ i + " " + Date.now());
     },1000*30)
 });
 client.on('message', message => {
